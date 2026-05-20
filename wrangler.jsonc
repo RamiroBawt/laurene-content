@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "laurene-content",
+  "compatibility_date": "2026-05-20",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "W21-f4265b"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
