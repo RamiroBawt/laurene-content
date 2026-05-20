@@ -1,0 +1,12 @@
+name = "laurene-content"
+compatibility_date = "2024-12-01"
+
+# Serve the entire repo root as static assets so the per-week token folders
+# (W21-f4265b/, W22-…/, etc.) resolve as URL paths exactly as authored on disk.
+#
+# Without this config Wrangler auto-detects the first index.html it finds and
+# uses that folder as the assets root — which mis-deploys W21-f4265b/ at the
+# site root and breaks the per-week token URL pattern.
+[assets]
+directory = "./"
+not_found_handling = "404-page"
