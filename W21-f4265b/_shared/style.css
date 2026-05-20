@@ -1,0 +1,299 @@
+/* Weekly delivery — brand DNA at light touch.
+ *
+ * Palette pulled from Laurène's content templates:
+ *   cream  #F5F1EC  page background
+ *   oxblood #540918  accents / links
+ *   ink    #1C1310  text
+ *   muted  #7A6F66  secondary text
+ *
+ * Type: system sans for legibility on phone (no display serif here — this
+ * page is a utility, not a brand showcase). Carousel slides themselves
+ * carry the brand serif.
+ */
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F5F1EC;
+  color: #1C1310;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: #540918; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ============ Brand header (week index) ============ */
+.brand-header {
+  padding: 32px 20px 20px;
+  border-bottom: 1px solid rgba(28, 19, 16, 0.08);
+  text-align: left;
+}
+.brand-mark {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #540918;
+  font-weight: 600;
+}
+.week-title {
+  margin: 14px 0 4px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.week-range {
+  font-size: 14px;
+  color: #7A6F66;
+}
+
+/* ============ Week index — day cards ============ */
+.week-list {
+  padding: 16px 16px 24px;
+}
+.day-card {
+  margin: 12px 0;
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(28, 19, 16, 0.04),
+              0 4px 14px rgba(28, 19, 16, 0.05);
+}
+.day-card__head {
+  padding: 14px 16px 8px;
+  border-bottom: 1px solid rgba(28, 19, 16, 0.06);
+}
+.day-card__date {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #540918;
+  font-weight: 600;
+}
+.day-card__type {
+  font-size: 12px;
+  color: #7A6F66;
+  margin-top: 4px;
+}
+.day-card__link {
+  display: block;
+  color: inherit;
+}
+.day-card__link:hover { text-decoration: none; }
+.day-card__cover {
+  background: #F5F1EC;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.day-card__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.day-card__meta {
+  padding: 14px 16px 18px;
+}
+.day-card__title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.day-card__slidecount {
+  font-size: 13px;
+  color: #7A6F66;
+}
+.day-card__cta {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #540918;
+  font-weight: 600;
+}
+
+.day-card--pending {
+  opacity: 0.6;
+}
+.day-card__pending {
+  padding: 18px 16px 20px;
+}
+.day-card__pending-note {
+  font-size: 12px;
+  color: #7A6F66;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ============ Day page header ============ */
+.day-header {
+  padding: 24px 20px 18px;
+  border-bottom: 1px solid rgba(28, 19, 16, 0.08);
+}
+.day-header__back {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.day-header__day {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #540918;
+  font-weight: 600;
+}
+.day-header__date {
+  font-size: 13px;
+  color: #7A6F66;
+  margin-top: 2px;
+}
+.day-header__title {
+  margin: 10px 0 6px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.day-header__type {
+  font-size: 12px;
+  color: #7A6F66;
+}
+
+/* ============ Slides ============ */
+.slides {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.slide {
+  margin: 0;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(28, 19, 16, 0.04),
+              0 3px 10px rgba(28, 19, 16, 0.04);
+}
+.slide__link { display: block; }
+.slide__link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.slide__caption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #7A6F66;
+  border-top: 1px solid rgba(28, 19, 16, 0.05);
+}
+.slide__index {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #1C1310;
+}
+.slide__label {
+  flex: 1;
+  text-transform: capitalize;
+}
+.slide__download {
+  font-size: 12px;
+  font-weight: 600;
+  color: #540918;
+  white-space: nowrap;
+}
+
+.slides-hint {
+  margin: 0 16px 24px;
+  padding: 10px 14px;
+  background: rgba(84, 9, 24, 0.04);
+  border-left: 3px solid #540918;
+  font-size: 13px;
+  color: #5A4942;
+  border-radius: 4px;
+}
+
+/* ============ Caption / hashtag blocks ============ */
+.block {
+  margin: 16px 16px 0;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(28, 19, 16, 0.04),
+              0 3px 10px rgba(28, 19, 16, 0.04);
+}
+.block__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(28, 19, 16, 0.05);
+}
+.block__title {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #540918;
+  font-weight: 600;
+}
+.block__copy {
+  background: #540918;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+.block__copy:active { transform: translateY(1px); }
+.block__body {
+  margin: 0;
+  padding: 14px 16px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #1C1310;
+}
+
+/* ============ Footer ============ */
+.page-footer {
+  padding: 24px 20px 40px;
+  text-align: center;
+  font-size: 11px;
+  color: #7A6F66;
+  letter-spacing: 0.05em;
+}
+.page-footer__back {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.page-footer__token {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  margin-bottom: 4px;
+}
+
+/* ============ Larger screens (tablet / desktop preview) ============ */
+@media (min-width: 720px) {
+  .week-list { max-width: 540px; margin: 0 auto; padding: 24px 16px 40px; }
+  .day-header { max-width: 720px; margin: 0 auto; }
+  .slides { max-width: 720px; margin: 0 auto; grid-template-columns: 1fr 1fr; }
+  .block { max-width: 720px; margin: 16px auto 0; }
+  .slides-hint { max-width: 720px; margin-left: auto; margin-right: auto; }
+}

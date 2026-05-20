@@ -1,0 +1,6 @@
+# Local-only artifacts (do not commit)
+.token
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
