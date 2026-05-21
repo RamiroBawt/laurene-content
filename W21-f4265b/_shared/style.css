@@ -212,6 +212,19 @@ a:hover { text-decoration: underline; }
   color: #540918;
   white-space: nowrap;
 }
+.slide__edit {
+  font-size: 12px;
+  font-weight: 600;
+  color: #C99A6C;
+  white-space: nowrap;
+  border: 1px solid rgba(201, 154, 108, 0.4);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.slide__edit:hover {
+  background: rgba(201, 154, 108, 0.08);
+  text-decoration: none;
+}
 
 .slides-hint {
   margin: 0 16px 24px;
