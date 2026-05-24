@@ -1,0 +1,16 @@
+# Exclude dev/build artifacts from the Workers Assets upload.
+# Without this, wrangler walks the repo root (per wrangler.toml [assets]
+# directory = "./") and tries to upload .git/objects/pack/*.pack which
+# routinely exceeds the 25 MiB per-asset limit, killing every CF deploy
+# silently. Symptom: index + first few days serve but later-committed days
+# return 404 because no deploy after a certain pack-size threshold has
+# completed successfully. (Incident 2026-05-23: first noticed when W22
+# thu/fri/sat 404'd despite local + remote files present.)
+.git/
+.gitignore
+.DS_Store
+README.md
+.assetsignore
+
+# Wrangler config is for the deploy tooling, not a runtime asset.
+wrangler.toml
