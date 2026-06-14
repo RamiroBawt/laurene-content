@@ -1,0 +1,4 @@
+address,city,state,zip,owner_name,estimated_value,signal
+1420 NE 3 AVE,Fort Lauderdale,FL,33304,,408000,permit
+3201 NE 5 AVE,Fort Lauderdale,FL,33308,,525000,expired
+701 NE 3 ST,Fort Lauderdale,FL,33301,,612000,lis_pendens
