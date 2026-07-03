@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>W24 Monday — 4 Creative Directions (divergence test)</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--oxblood:#540918;--ink:#1C1310;--paper:#F5F1EC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#191512;color:var(--paper);font-family:'Jost',sans-serif;padding:56px 48px}
+  header{max-width:1260px;margin:0 auto 48px}
+  h1{font-weight:600;font-size:34px;letter-spacing:.02em}
+  .sub{margin-top:12px;font-size:19px;color:#b8ab9f;line-height:1.55;max-width:900px}
+  .grid{
+    max-width:1260px;margin:0 auto;display:grid;
+    grid-template-columns:repeat(auto-fit, 596px);gap:44px;justify-content:center;
+  }
+  .card{background:#221c18;border-radius:18px;padding:28px;border:1px solid #382e27}
+  /* deterministic scaling: child pages are 1128×1398 incl. their 24px mat;
+     wrapper is 540 wide → scale locked at 540/1128 */
+  .frame-wrap{
+    width:540px;height:669px;overflow:hidden;border-radius:10px;
+    position:relative;background:#111;
+  }
+  .frame-wrap iframe{
+    width:1128px;height:1398px;border:0;position:absolute;top:0;left:0;
+    transform:scale(0.4787);transform-origin:top left;pointer-events:none;
+  }
+  .label{display:flex;align-items:baseline;gap:14px;margin:22px 0 10px}
+  .num{font-size:15px;font-weight:600;letter-spacing:.2em;color:#C99A6C}
+  .name{font-size:24px;font-weight:600}
+  .phil{font-size:17px;line-height:1.55;color:#b8ab9f;max-width:540px}
+  .signal{margin-top:12px;font-size:16px;line-height:1.5;color:#8d7f72;max-width:540px}
+  .signal b{color:#C99A6C;font-weight:500}
+  .open{display:inline-block;margin-top:14px;font-size:15px;letter-spacing:.08em;
+    color:var(--paper);text-decoration:none;border:1px solid #4a3e33;
+    padding:8px 16px;border-radius:999px}
+  .open:hover{background:#2c241e}
+  footer{max-width:1260px;margin:52px auto 0;font-size:15px;color:#6e6257;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <h1>W24 Monday · one brief, four visual worlds</h1>
+  <p class="sub">Identical content — eyebrow, headline, subtitle from the real staged brief
+  ("Your offer was accepted. The next 45 days are where deals fall apart.") — designed four
+  radically different ways. The variable under test is <b>design philosophy only</b>.
+  Her reaction to this set is the taste data the pipeline has never had.</p>
+</header>
+
+<div class="grid">
+  <div class="card">
+    <div class="frame-wrap"><iframe src="1-control-e-editorial.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">01</span><span class="name">E-Editorial (current)</span></div>
+    <p class="phil">The approved standard: cream paper, Playfair serif, oxblood accent, contained photo plate. Restrained, tasteful, editorial.</p>
+    <p class="signal"><b>If she picks this:</b> the design was never the problem — look at topics, captions, or the faceless/static issue instead.</p>
+    <a class="open" href="1-control-e-editorial.html" target="_blank">open full size</a>
+  </div>
+
+  <div class="card">
+    <div class="frame-wrap"><iframe src="2-loud-direct.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">02</span><span class="name">Loud / Direct</span></div>
+    <p class="phil">Her own critique ("too calm and soft — use shock or surprise") applied visually: brutalist type, strikethrough, highlighter mark, handwritten aside. Feed-stopping by force.</p>
+    <p class="signal"><b>If she picks this:</b> the whole system needs a register shift — templates, photos, captions all currently whisper; she wants it to talk with its hands.</p>
+    <a class="open" href="2-loud-direct.html" target="_blank">open full size</a>
+  </div>
+
+  <div class="card">
+    <div class="frame-wrap"><iframe src="5-loud-luxury.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">05</span><span class="name">Loud Luxury <span style="color:#6e6257;font-size:16px">(rejected — too polished, brown read muddy)</span></span></div>
+    <p class="phil">Vogue-cover take: gold hairline inset plate, espresso ground, ghosted numeral. Ryan's verdict: over-corrected — the aggression was the point.</p>
+    <a class="open" href="5-loud-luxury.html" target="_blank">open full size</a>
+  </div>
+
+  <div class="card" style="border-color:#C99A6C">
+    <div class="frame-wrap"><iframe src="6-loud-punch.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">06</span><span class="name">Loud Punch ★ current pick</span></div>
+    <p class="phil">02's aggression, brand execution: Playfair 800 poster stack on true near-black, thick oxblood strike through <i>accepted</i>, solid rotated "45 days" slab (no jewelry), brass handwritten aside. Punchy — and still recognizably her palette.</p>
+    <p class="signal"><b>Status:</b> Ryan-approved direction for the next round — candidate to show Laurène alongside the control.</p>
+    <a class="open" href="6-loud-punch.html" target="_blank">open full size</a>
+  </div>
+
+  <div class="card">
+    <div class="frame-wrap"><iframe src="3-face-forward.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">03</span><span class="name">Face-Forward</span></div>
+    <p class="phil">Her as the content: full-bleed portrait (placeholder — no portrait on file yet), creator nameplate, headline in the lower third. "From someone who closes here."</p>
+    <p class="signal"><b>If she picks this:</b> the real gap is anonymity — priority becomes getting her photos (or the Soul-ID pilot), not layout work.</p>
+    <a class="open" href="3-face-forward.html" target="_blank">open full size</a>
+  </div>
+
+  <div class="card">
+    <div class="frame-wrap"><iframe src="4-native-casual.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">04</span><span class="name">Native / Casual</span></div>
+    <p class="phil">Anti-polished: a Notes-app screenshot she could have made on her phone. Checklist, scribbles, lowercase. Reads as a person, not a design studio.</p>
+    <p class="signal"><b>If she picks this:</b> polish itself is the turn-off — the pipeline should get simpler and more personal, not more designed.</p>
+    <a class="open" href="4-native-casual.html" target="_blank">open full size</a>
+  </div>
+
+  <div class="card" style="border-color:#C99A6C">
+    <div class="frame-wrap"><iframe src="7-loud-punch-photo.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">07</span><span class="name">Loud Punch + Photo</span></div>
+    <p class="phil">06 with a full-bleed photo layer under the stack — and the photo is the pipeline's existing BRIGHT daylight aerial, graded into the dark register entirely in CSS (grayscale pull, contrast, oxblood soft-light tint, scrim). Proof the grade lives in the design system, not the prompt.</p>
+    <p class="signal"><b>What this proves:</b> Higgsfield keeps producing well-lit photos; the template imposes the mood. Every photo matches automatically, and the existing brightness QC stays valid.</p>
+    <a class="open" href="7-loud-punch-photo.html" target="_blank">open full size</a>
+  </div>
+
+
+  <div class="card" style="border-color:#C99A6C">
+    <div class="frame-wrap"><iframe src="8-loud-punch-interior.html" scrolling="no"></iframe></div>
+    <div class="label"><span class="num">08</span><span class="name">Loud Punch — interior card</span></div>
+    <p class="phil">The vocabulary systemized for slides 2–6: <b>strike = the myth</b> ("The inspection is a formality"), <b>bold cream = the truth</b>, <b>oxblood slab = the number</b> (10–15 days), <b>graded plate = the evidence photo</b>, <b>brass scrawl = her voice</b>. Real content from the W24 Monday brief, objection №1.</p>
+    <p class="signal"><b>Status:</b> completes the showable mini-set — cover (06/07) + interior (08) in the new language.</p>
+    <a class="open" href="8-loud-punch-interior.html" target="_blank">open full size</a>
+  </div>
+
+</div>
+
+<footer>
+  Built 2026-06 as a divergence test, not a redesign proposal. Local files only — nothing rendered
+  through the pipeline, nothing sent. Directions 2–4 intentionally break the locked brand system;
+  that's the point of the test. Portrait in 03 is a placeholder pending real photos of Laurène.
+</footer>
+</body>
+</html>

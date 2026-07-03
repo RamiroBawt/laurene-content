@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Punch Daylight 6/8 — objection 4: the clock (timeline-bar move)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600;1,700&family=Jost:wght@400;500;600&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{--oxblood:#540918;--brass:#A8794A;--paper:#F5F1EC;--ink:#1C1310;--taupe:#9F8E87}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#222;display:flex;justify-content:center;padding:24px}
+  .slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--paper);
+    display:flex;flex-direction:column;padding:84px 80px 74px}
+  .eyebrow{font-family:'Jost',sans-serif;font-weight:600;font-size:24px;letter-spacing:.3em;
+    color:var(--oxblood);text-transform:uppercase}
+  .myth{margin-top:56px;font-family:'Playfair Display',serif;font-style:italic;font-weight:700;
+    font-size:60px;line-height:1.15;color:var(--taupe);position:relative;
+    display:inline-block;align-self:flex-start}
+  .myth::after{content:"";position:absolute;left:-1.5%;right:-1.5%;top:54%;height:9px;
+    background:var(--oxblood);transform:rotate(-1.2deg);opacity:.92}
+  .truth{margin-top:38px;font-family:'Playfair Display',serif;font-weight:800;
+    font-size:104px;line-height:1.06;color:var(--ink);letter-spacing:-.015em}
+  .bar-wrap{margin-top:74px}
+  .bar{display:flex;height:110px;width:100%;box-shadow:0 16px 36px rgba(28,19,16,.16)}
+  .bar .eaten{flex:0 0 47%;background:var(--oxblood);display:flex;align-items:center;
+    justify-content:center;font-family:'Playfair Display',serif;font-style:italic;
+    font-weight:700;font-size:40px;color:var(--paper)}
+  .bar .yours{flex:1;background:rgba(28,19,16,.05);border:1px solid rgba(28,19,16,.25);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Jost',sans-serif;font-weight:500;font-size:28px;color:#4b4038}
+  .bar-labels{display:flex;justify-content:space-between;margin-top:20px;
+    font-family:'Jost',sans-serif;font-weight:600;font-size:22px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--taupe)}
+  .data{margin-top:62px;font-family:'Jost',sans-serif;font-weight:400;font-size:30px;
+    line-height:1.48;color:#4b4038;max-width:900px}
+  .data .row{display:flex;gap:18px;margin-bottom:16px}
+  .data .tick{color:var(--brass);font-weight:600;flex:0 0 auto}
+  .data b{color:var(--ink);font-weight:600}
+  .scrawl{align-self:flex-end;margin-top:8px;font-family:'Caveat',cursive;font-weight:700;
+    font-size:48px;color:var(--oxblood);transform:rotate(-4deg)}
+  .folio{margin-top:auto;display:flex;justify-content:space-between;align-items:center;
+    border-top:1px solid #C9C0B9;padding-top:30px}
+  .folio .who{font-family:'Jost',sans-serif;font-weight:600;font-size:23px;letter-spacing:.22em;
+    color:var(--ink);text-transform:uppercase}
+  .folio .idx{font-family:'Playfair Display',serif;font-style:italic;font-size:28px;color:var(--taupe)}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="eyebrow">No. 4 · The Clock</div>
+  <div class="myth">"45 days is plenty of time."</div>
+  <div class="truth">Three weeks of it can vanish.</div>
+  <div class="bar-wrap">
+    <div class="bar">
+      <div class="eaten">~3 weeks gone</div>
+      <div class="yours">what's actually yours</div>
+    </div>
+    <div class="bar-labels"><span>Day 1</span><span>HOA · Estoppel · Survey · Title</span><span>Day 45</span></div>
+  </div>
+  <div class="data">
+    <div class="row"><span class="tick">—</span><span>Estoppel letters: <b>10–15 business days</b> by Florida statute.</span></div>
+    <div class="row"><span class="tick">—</span><span>Survey: <b>3–7 days</b> — plus HOA approval and lender clear-to-close.</span></div>
+  </div>
+  <div class="scrawl">the clock starts day one →</div>
+  <div class="folio">
+    <div class="who">Laurène · Fort Lauderdale</div>
+    <div class="idx">06 / 08</div>
+  </div>
+</div>
+</body>
+</html>

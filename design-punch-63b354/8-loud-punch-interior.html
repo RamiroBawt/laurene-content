@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Direction 8 — Loud Punch interior (objection card)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600;1,700;1,800&family=Jost:wght@400;500;600&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --oxblood:#540918; --brass-warm:#C99A6C; --paper:#F5F1EC; --black:#0E0A08;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#222;display:flex;justify-content:center;padding:24px}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--black);
+    display:flex;flex-direction:column;padding:84px 80px 74px;
+  }
+  .eyebrow{
+    font-family:'Jost',sans-serif;font-weight:600;font-size:24px;
+    letter-spacing:.3em;color:rgba(245,241,236,.55);text-transform:uppercase;
+  }
+  /* the myth — struck through, same move as the cover */
+  .myth{
+    margin-top:56px;
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:700;
+    font-size:62px;line-height:1.15;color:rgba(245,241,236,.42);
+    position:relative;display:inline-block;align-self:flex-start;
+  }
+  .myth::after{
+    content:"";position:absolute;left:-1.5%;right:-1.5%;top:54%;height:9px;
+    background:var(--oxblood);transform:rotate(-1.2deg);
+  }
+  /* the truth — bold cream */
+  .truth{
+    margin-top:34px;
+    font-family:'Playfair Display',serif;font-weight:800;
+    font-size:96px;line-height:1.05;color:var(--paper);letter-spacing:-.015em;
+  }
+  /* evidence plate */
+  .plate-wrap{margin-top:58px;position:relative}
+  .plate{
+    width:100%;height:400px;overflow:hidden;position:relative;
+  }
+  .plate img{
+    width:100%;height:100%;object-fit:cover;object-position:center 55%;
+    filter:grayscale(.45) contrast(1.28) brightness(.62) saturate(.8);
+  }
+  .plate .tint{
+    position:absolute;inset:0;background:var(--oxblood);
+    mix-blend-mode:soft-light;opacity:.7;
+  }
+  .plate .edge{
+    position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(245,241,236,.14);
+  }
+  /* the stat slab — overlaps the plate, mirrors the cover slab */
+  .stat{
+    position:absolute;top:-38px;left:-8px;
+    background:var(--oxblood);color:var(--paper);
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:700;
+    font-size:64px;padding:4px 30px 14px 24px;transform:rotate(-1.4deg);
+    box-shadow:0 14px 40px rgba(14,10,8,.55);
+  }
+  .stat small{
+    display:block;font-family:'Jost',sans-serif;font-style:normal;
+    font-weight:600;font-size:19px;letter-spacing:.24em;text-transform:uppercase;
+    color:rgba(245,241,236,.72);margin-top:2px;
+  }
+  /* data lines */
+  .data{
+    margin-top:44px;font-family:'Jost',sans-serif;font-weight:400;
+    font-size:31px;line-height:1.48;color:rgba(245,241,236,.82);max-width:880px;
+  }
+  .data b{color:var(--paper);font-weight:600}
+  .data .row{display:flex;gap:18px;margin-bottom:18px}
+  .data .tick{color:var(--brass-warm);font-weight:600;flex:0 0 auto}
+  .scrawl{
+    align-self:flex-end;margin-top:10px;
+    font-family:'Caveat',cursive;font-weight:700;font-size:48px;
+    color:var(--brass-warm);transform:rotate(-4deg);
+  }
+  .folio{
+    margin-top:auto;display:flex;justify-content:space-between;align-items:center;
+    border-top:1px solid rgba(245,241,236,.16);padding-top:30px;
+  }
+  .folio .who{
+    font-family:'Jost',sans-serif;font-weight:600;font-size:23px;
+    letter-spacing:.22em;color:var(--paper);text-transform:uppercase;
+  }
+  .folio .idx{
+    font-family:'Playfair Display',serif;font-style:italic;font-size:28px;
+    color:rgba(245,241,236,.55);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="eyebrow">No. 1 · The Inspection Window</div>
+  <div class="myth">"The inspection is a formality."</div>
+  <div class="truth">It's your first real negotiation.</div>
+  <div class="plate-wrap">
+    <div class="plate">
+      <img src="photo-homeoffice.png" alt="">
+      <div class="tint"></div>
+      <div class="edge"></div>
+    </div>
+    <div class="stat">10–15 days<small>Florida default window</small></div>
+  </div>
+  <div class="data">
+    <div class="row"><span class="tick">—</span><span>Every flagged item is <b>leverage</b>: repair credit, price adjustment, or walk clause.</span></div>
+    <div class="row"><span class="tick">—</span><span><b>20%+ of active listings</b> already carry a price cut. Sellers are negotiating.</span></div>
+  </div>
+  <div class="scrawl">this is where you prove it →</div>
+  <div class="folio">
+    <div class="who">Laurène · Fort Lauderdale</div>
+    <div class="idx">03 / 08</div>
+  </div>
+</div>
+</body>
+</html>

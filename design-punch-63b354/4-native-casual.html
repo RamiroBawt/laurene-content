@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Direction 4 — Native / Casual (anti-polished, phone-made)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --oxblood:#540918; --notes:#FFFCF5; --hair:#E8E2D5; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#222;display:flex;justify-content:center;padding:24px}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:linear-gradient(160deg,#EDE7DC 0%,#E3DACA 100%);
+    display:flex;align-items:center;justify-content:center;
+  }
+  /* the "screenshot" card */
+  .notes{
+    width:880px;background:var(--notes);border-radius:36px;
+    box-shadow:0 40px 90px rgba(28,19,16,.28);
+    padding:64px 66px 72px;position:relative;transform:rotate(-.6deg);
+    font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',sans-serif;
+  }
+  .stamp{
+    text-align:center;font-size:22px;color:#9a948a;margin-bottom:44px;
+  }
+  h1{
+    font-size:56px;line-height:1.18;font-weight:700;color:#161310;
+    letter-spacing:-.01em;
+  }
+  h1 .accent{color:var(--oxblood)}
+  .rule{height:1px;background:var(--hair);margin:40px 0 34px}
+  .lead{font-size:31px;line-height:1.5;color:#3c3833;font-weight:400}
+  ul{list-style:none;margin-top:38px;display:flex;flex-direction:column;gap:30px}
+  li{
+    display:flex;gap:22px;font-size:31px;line-height:1.42;color:#161310;
+  }
+  li .box{
+    flex:0 0 auto;width:38px;height:38px;border:2.5px solid #b9b2a5;
+    border-radius:10px;margin-top:4px;position:relative;
+  }
+  li.done .box{border-color:var(--oxblood)}
+  li.done .box::after{
+    content:"✓";position:absolute;inset:0;display:flex;align-items:center;
+    justify-content:center;color:var(--oxblood);font-weight:700;font-size:26px;
+  }
+  li .t b{font-weight:600}
+  li .t .muted{color:#8d867b}
+  .scribble{
+    position:absolute;right:44px;top:-34px;
+    font-family:'Caveat',cursive;font-weight:700;font-size:46px;
+    color:var(--oxblood);transform:rotate(4deg);
+  }
+  .under{
+    position:relative;white-space:nowrap;
+  }
+  .under svg{position:absolute;left:-4px;right:-4px;bottom:-12px;width:calc(100% + 8px);height:16px}
+  .caption{
+    position:absolute;left:0;right:0;bottom:52px;text-align:center;
+    font-family:'Caveat',cursive;font-weight:600;font-size:44px;color:#4b443c;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="notes">
+    <div class="scribble">save this ↓</div>
+    <div class="stamp">June 8 · 9:41 AM</div>
+    <h1>your offer got accepted. <span class="accent">the next <span class="under">45 days<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9 Q 40 2 80 8 T 198 6" fill="none" stroke="#540918" stroke-width="4" stroke-linecap="round"/></svg></span> are where deals fall apart.</span></h1>
+    <div class="rule"></div>
+    <p class="lead">5 things buyers don't find out until they're already in it:</p>
+    <ul>
+      <li class="done"><span class="box"></span><span class="t"><b>the inspection</b> — it's your first real negotiation, not a formality</span></li>
+      <li class="done"><span class="box"></span><span class="t"><b>pre-approval ≠ done</b> — underwriting re-checks everything after you sign</span></li>
+      <li><span class="box"></span><span class="t"><b>the appraisal gap</b> <span class="muted">— swipe</span></span></li>
+      <li><span class="box"></span><span class="t"><b>the HOA clock</b> <span class="muted">— swipe</span></span></li>
+      <li><span class="box"></span><span class="t"><b>the walkthrough</b> <span class="muted">— swipe</span></span></li>
+    </ul>
+  </div>
+  <div class="caption">— from my notes, laurène 🤍</div>
+</div>
+</body>
+</html>

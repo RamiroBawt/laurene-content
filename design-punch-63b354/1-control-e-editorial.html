@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Direction 1 — E-Editorial (current approved standard)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --oxblood:#540918; --brass:#A8794A; --brass-warm:#C99A6C;
+    --paper:#F5F1EC; --ink:#1C1310; --taupe:#9F8E87; --rule:#C9C0B9;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#222;display:flex;justify-content:center;padding:24px}
+  .slide{
+    width:1080px;height:1350px;background:var(--paper);position:relative;
+    overflow:hidden;display:flex;flex-direction:column;padding:88px 84px 72px;
+  }
+  .eyebrow{
+    font-family:'Jost',sans-serif;font-weight:500;font-size:26px;
+    letter-spacing:.34em;color:var(--oxblood);text-transform:uppercase;
+  }
+  .eyebrow::after{
+    content:"";display:block;width:64px;height:2px;background:var(--brass);
+    margin-top:26px;
+  }
+  h1{
+    font-family:'Playfair Display',serif;font-weight:400;font-size:92px;
+    line-height:1.12;color:var(--ink);margin-top:56px;letter-spacing:-.01em;
+  }
+  h1 em{font-style:italic;font-weight:700;color:var(--oxblood)}
+  .subtitle{
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:400;
+    font-size:34px;line-height:1.4;color:var(--brass-warm);margin-top:44px;
+    max-width:760px;
+  }
+  .photo-plate{
+    margin-top:auto;width:100%;height:430px;overflow:hidden;position:relative;
+  }
+  .photo-plate img{width:100%;height:100%;object-fit:cover;filter:saturate(.92)}
+  .photo-plate::after{
+    content:"";position:absolute;inset:0;
+    box-shadow:inset 0 0 0 1px rgba(168,121,74,.45);
+  }
+  .folio{
+    display:flex;justify-content:space-between;align-items:baseline;
+    margin-top:44px;
+  }
+  .folio .wordmark{
+    font-family:'Playfair Display',serif;font-style:italic;font-size:30px;
+    color:var(--ink);
+  }
+  .folio .meta{
+    font-family:'Jost',sans-serif;font-size:20px;letter-spacing:.22em;
+    color:var(--taupe);text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="eyebrow">Buyer Process — Florida 2026</div>
+  <h1>Your offer was accepted. The next <em>45 days</em> are where deals fall apart.</h1>
+  <p class="subtitle">Five things most buyers don't know until they're already inside the transaction.</p>
+  <div class="photo-plate">
+    <img src="photo-homeoffice.png" alt="">
+  </div>
+  <div class="folio">
+    <div class="wordmark">Laurène</div>
+    <div class="meta">Fort Lauderdale · 01 — 07</div>
+  </div>
+</div>
+</body>
+</html>
