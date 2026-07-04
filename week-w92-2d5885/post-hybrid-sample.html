@@ -63,7 +63,7 @@
 </style>
 </head>
 <body>
-  <div class="note">pretend reel — the hybrid flagship: Veo 3.1 Lite footage woven through the brand type system, native-pace cuts. Same brief as the old scenic reel — compare them. · <a href="index" style="color:#C99A6C">← the full week</a></div>
+  <div class="note">pretend reel — the hybrid flagship, choreography v2. Swipe: cut 1 is VOICED (placeholder TTS + word-synced captions — tap 🔇 to hear it), cut 2 is the silent version. · <a href="index" style="color:#C99A6C">← the full week</a></div>
 
   <div class="phone"><div class="screen">
     <div class="statusbar"><span>9:41</span><span class="right">📶 ⌁ 🔋</span></div>
@@ -82,13 +82,19 @@
       
       <div class="track" id="track">
 <div class="cell" style="position:relative;background:#000">
-  <video id="reelv" src="hybrid-sample/hybrid.mp4" autoplay muted loop playsinline
+  <video id="reelvv" src="hybrid-sample/hybrid-voiced.mp4" autoplay muted loop playsinline
     style="width:100%;height:100%;object-fit:cover;display:block"></video>
-  <div onclick="var v=document.getElementById('reelv');v.muted=!v.muted;this.textContent=v.muted?'🔇':'🔊'"
+  <div onclick="var v=document.getElementById('reelvv');v.muted=!v.muted;this.textContent=v.muted?'🔇':'🔊'"
     style="position:absolute;right:12px;bottom:14px;background:rgba(0,0,0,.6);color:#fff;width:34px;height:34px;
     border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer">🔇</div>
   <div style="position:absolute;left:12px;top:12px;background:rgba(0,0,0,.55);color:#fff;
-    font-size:11px;letter-spacing:.16em;padding:4px 8px;border-radius:3px">REEL · HYBRID-DYNAMIC — VEO + BRAND TYPE</div>
+    font-size:11px;letter-spacing:.16em;padding:4px 8px;border-radius:3px">REEL · V2 + VOICE &amp; CAPTIONS (TTS PLACEHOLDER)</div>
+</div>
+<div class="cell" style="position:relative;background:#000">
+  <video id="reelv" src="hybrid-sample/hybrid.mp4" autoplay muted loop playsinline
+    style="width:100%;height:100%;object-fit:cover;display:block"></video>
+  <div style="position:absolute;left:12px;top:12px;background:rgba(0,0,0,.55);color:#fff;
+    font-size:11px;letter-spacing:.16em;padding:4px 8px;border-radius:3px">REEL · V2 SILENT — VEO + BRAND TYPE</div>
 </div>
       </div>
 
@@ -115,10 +121,10 @@
   const track = document.getElementById('track');
   const counter = document.getElementById('counter');
   const dotsrow = document.getElementById('dotsrow');
-  const N = 1;
+  const N = 2;
   for(let i=0;i<N;i++){const d=document.createElement('i');if(i===0)d.classList.add('on');dotsrow.appendChild(d)}
   function setIdx(i){
-    counter.textContent = (i+1)+'/'+N;
+    if(counter) counter.textContent = (i+1)+'/'+N;
     [...dotsrow.children].forEach((d,k)=>d.classList.toggle('on',k===i));
   }
   track.addEventListener('scroll',()=>{
